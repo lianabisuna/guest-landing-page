@@ -2,7 +2,9 @@
   <div class="grid grid-cols-3 px-10 py-4 border-2 border-b-yellow-500">
     <!-- Logo/Button -->
     <div class="flex space-x-4">
-      <img src="@/assets/images/logo.png" alt="logo">
+      <div>
+        <img src="@/assets/images/logo.png" alt="logo" class="h-full">
+      </div>
       <AppButton outlined value="Find Courses" />
     </div>
 
@@ -28,19 +30,19 @@
 </template>
 
 <script>
-export default {
-  name: 'PageNavigation',
+  export default {
+    name: 'PageNavigation',
 
-  data: () => ({
-    menuItems: [
-      { name: 'Home', value: '', active: true },
-      { name: 'Courses', value: '', active: false },
-      { name: 'Events', value: '', active: false },
-      { name: 'Membership', value: '', active: false },
-      { name: 'Contact Us', value: '', active: false },
-    ]
-  })
-}
+    data: () => ({
+      menuItems: [
+        { name: 'Home', value: '', active: true },
+        { name: 'Courses', value: '', active: false },
+        { name: 'Events', value: '', active: false },
+        { name: 'Membership', value: '', active: false },
+        { name: 'Contact Us', value: '', active: false },
+      ]
+    })
+  }
 </script>
 
 <style>

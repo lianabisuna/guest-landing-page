@@ -1,26 +1,29 @@
 <template>
   <div id="app">
     <PageNavigation />
+    <PageBanner />
   </div>
 </template>
 
 <script>
-import PageNavigation from './components/Navigation'
+  import PageNavigation from './components/Navigation'
+  import PageBanner from './components/Banner'
 
-export default {
-  name: 'App',
-  components: {
-    PageNavigation
+  export default {
+    name: 'App',
+    components: {
+      PageNavigation,
+      PageBanner
+    }
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: Archivo, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #4F4F4F;
-  font-size: 13px;
-}
+  #app {
+    font-family: Archivo, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #4F4F4F;
+    font-size: 16px;
+  }
 </style>
