@@ -3,9 +3,23 @@ import App from './App.vue'
 import './assets/styles/index.css'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faEye, faEyeSlash, faCaretDown, faCaretUp, faStar } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+
 
 Vue.config.productionTip = false
 
+
+
+// Font Awesome
+library.add(faEye, faEyeSlash, faCaretDown, faCaretUp, faStar)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+
+
+// Register base components automatically
 const requireComponent = require.context(
   // The relative path of the components folder
   './components',
@@ -40,6 +54,8 @@ requireComponent.keys().forEach(fileName => {
     componentConfig.default || componentConfig
   )
 })
+
+
 
 new Vue({
   render: h => h(App),
