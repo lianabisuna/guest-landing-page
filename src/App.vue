@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <AppButton />
+    <PageNavigation />
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+import PageNavigation from './components/Navigation'
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld
+    PageNavigation
   }
 }
 </script>
@@ -20,8 +20,7 @@ export default {
   font-family: Archivo, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #4F4F4F;
+  font-size: 13px;
 }
 </style>
