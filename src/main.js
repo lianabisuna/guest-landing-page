@@ -4,7 +4,7 @@ import './assets/styles/index.css'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faEye, faEyeSlash, faCaretDown, faCaretUp, faStar } from '@fortawesome/free-solid-svg-icons'
+import { faEye, faEyeSlash, faCaretDown, faCaretUp, faStar, faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 
@@ -14,7 +14,7 @@ Vue.config.productionTip = false
 
 
 // Font Awesome
-library.add(faEye, faEyeSlash, faCaretDown, faCaretUp, faStar)
+library.add(faEye, faEyeSlash, faCaretDown, faCaretUp, faStar, faBars)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 
