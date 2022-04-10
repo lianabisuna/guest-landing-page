@@ -32,12 +32,12 @@
 
     <!-- MOBILE -->
     <!-- Hamburger Menu -->
-    <div class="flex items-center">
+    <div class="flex items-center visible lg:hidden">
       <font-awesome-icon class="text-3xl text-blue-500" icon="fa-solid fa-bars" />
     </div>
 
     <!-- Login -->
-    <div class="ml-auto">
+    <div class="ml-auto visible lg:hidden">
       <AppButton outlined value="Login" />
     </div>
   </div>

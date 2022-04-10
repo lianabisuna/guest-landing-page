@@ -2,18 +2,21 @@
   <div id="app">
     <PageNavigation />
     <PageBanner />
+    <CourseSection />
   </div>
 </template>
 
 <script>
   import PageNavigation from './components/Navigation'
   import PageBanner from './components/Banner'
+  import CourseSection from './components/Courses'
 
   export default {
     name: 'App',
     components: {
       PageNavigation,
-      PageBanner
+      PageBanner,
+      CourseSection
     }
   }
 </script>
