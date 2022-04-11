@@ -6,6 +6,9 @@
     <EventSection />
     <MembershipSection />
     <StatisticsSection />
+    <ContactSection />
+    <PageFooter />
+    <PageSubFooter />
   </div>
 </template>
 
@@ -16,6 +19,9 @@
   import EventSection from './components/Events'
   import MembershipSection from './components/Membership'
   import StatisticsSection from './components/Statistics'
+  import ContactSection from './components/Contact'
+  import PageFooter from './components/Footer'
+  import PageSubFooter from './components/SubFooter'
 
   export default {
     name: 'App',
@@ -25,7 +31,10 @@
       CourseSection,
       EventSection,
       MembershipSection,
-      StatisticsSection
+      StatisticsSection,
+      ContactSection,
+      PageFooter,
+      PageSubFooter
     }
   }
 </script>
