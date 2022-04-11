@@ -20,9 +20,9 @@
         </div>
 
         <!-- View All Button -->
-    <div class="text-center">
-      <AppButton outlined white value="View all events" />
-    </div>
+        <div class="text-center">
+        <AppButton outlined white value="View all events" />
+        </div>
     </div>
 </template>
 
