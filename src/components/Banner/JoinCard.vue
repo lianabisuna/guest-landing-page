@@ -18,7 +18,7 @@
           label="Email Address"
           placeholder="Enter email"
         />
-        <AppTextInput
+        <AppPassword
           label="Password"
           placeholder="Enter 8 to 10 characters"
         />
@@ -32,8 +32,14 @@
       </div>
       <div class="text-center text-sm text-gray-500 hidden lg:block">or create an account using</div>
       <div class="space-x-3 lg:flex hidden">
-        <AppButton class="w-full" value="Facebook" />
-        <AppButton class="w-full" value="Google" />
+        <button class="w-full rounded px-4 min-w-[5.5rem] min-h-[2.5rem] text-sm bg-indigo-700 text-white">
+          <font-awesome-icon icon="fa-brands fa-facebook-square"></font-awesome-icon>
+          <span class="pl-2">Facebook</span>
+        </button>
+        <button class="w-full rounded px-4 min-w-[5.5rem] min-h-[2.5rem] text-sm bg-blue-500 text-white">
+          <font-awesome-icon icon="fa-brands fa-google"></font-awesome-icon>
+          <span class="pl-2">Google</span>
+        </button>
       </div>
     </div>
   </div>

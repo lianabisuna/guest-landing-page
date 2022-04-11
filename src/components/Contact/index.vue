@@ -1,6 +1,8 @@
 <template>
-  <div class="px-3 lg:px-40 py-16 space-y-10">
-      <div class="lg:grid lg:grid-cols-12">
+  <div class="w-full">
+    <div class="px-3 lg:px-40 py-16">
+      <div class="max-w-7xl mx-auto space-y-10">
+        <div class="lg:grid lg:grid-cols-12">
           <!-- Get in touch -->
           <div class="lg:col-span-5 space-y-6 px-11 lg:pr-28 pb-20 lg:pb-0">
             <div class="text-3xl font-narrow font-bold pb-2 text-center lg:text-start">Get In Touch</div>
@@ -26,7 +28,9 @@
               <div><AppButton class="w-full" value="Send Message" /></div>
             </div>
           </div>
+        </div>
       </div>
+    </div>
   </div>
 </template>
 

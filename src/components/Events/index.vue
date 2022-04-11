@@ -1,28 +1,31 @@
 <template>
-    <!-- Section Title -->
-    <div class="px-3 lg:px-10 py-16 space-y-10 bg-blue-800">
-        <!-- Section Title -->
-        <div class="text-center text-white">
-            <div class="text-3xl font-narrow font-bold pb-1">Events</div>
-            <div class="text-xl">Join Upcoming CPD Accredited Training, Events and Seminars</div>
-        </div>
+    <div class="w-full bg-blue-800">
+        <div class="max-w-7xl mx-auto px-3 lg:px-10 py-16">
+            <div class="space-y-10">
+                <!-- Section Title -->
+                <div class="text-center text-white">
+                    <div class="text-3xl font-narrow font-bold pb-1">Events</div>
+                    <div class="text-xl">Join Upcoming CPD Accredited Training, Events and Seminars</div>
+                </div>
 
-        <!-- Event cards -->    
-        <div class="lg:grid lg:grid-cols-2 gap-5 space-y-5 lg:space-y-0">
-            <EventCard
-                v-for="(event, index) in eventItems"
-                :key="index"
-                :title="event.title"
-                :date="event.date"
-                :preview="event.preview"
-                :image="event.src"
-                :class="{ 'hidden': index == eventItems.length-1 }"
-            />
-        </div>
+                <!-- Event cards -->    
+                <div class="lg:grid lg:grid-cols-2 gap-5 space-y-5 lg:space-y-0">
+                    <EventCard
+                        v-for="(event, index) in eventItems"
+                        :key="index"
+                        :title="event.title"
+                        :date="event.date"
+                        :preview="event.preview"
+                        :image="event.src"
+                        :class="{ 'hidden': index == eventItems.length-1 }"
+                    />
+                </div>
 
-        <!-- View All Button -->
-        <div class="text-center">
-        <AppButton outlined white value="View all events" />
+                <!-- View All Button -->
+                <div class="text-center">
+                <AppButton outlined white value="View all events" />
+                </div>
+            </div>
         </div>
     </div>
 </template>

@@ -1,12 +1,16 @@
 <template>
-  <div class="px-14 lg:px-40 py-12 lg:py-8 bg-statistics bg-no-repeat lg:space-x-1 grid grid-cols-2 lg:grid-cols-5 bg-cover gap-10 lg:gap-0">
-    <StatisticsCard
-        v-for="(statistics, index) in statisticsItems"
-        :key="index"
-        :value="statistics.value"
-        :caption="statistics.caption"
-        :alt="statistics.alt"
-    />
+  <div class="w-full bg-statistics bg-no-repeat bg-cover">
+    <div class="max-w-7xl mx-auto px-14 lg:px-40 py-12 lg:py-8">
+        <div class="lg:space-x-1 grid grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-0">
+            <StatisticsCard
+                v-for="(statistics, index) in statisticsItems"
+                :key="index"
+                :value="statistics.value"
+                :caption="statistics.caption"
+                :alt="statistics.alt"
+            />
+        </div>
+    </div>
   </div>
 </template>
 

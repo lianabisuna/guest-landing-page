@@ -11,7 +11,7 @@
           <div class="text-sm text-gray-500">{{ date }}</div>
           <div class="leading-tight">{{ preview }}</div>
           <!-- See more -->
-          <div class="pt-2 text-yellow-500">See more</div>
+          <button class="pt-2 text-yellow-500">See more</button>
       </div>
   </div>
 </template>
