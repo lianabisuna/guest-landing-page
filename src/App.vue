@@ -5,6 +5,7 @@
     <CourseSection />
     <EventSection />
     <MembershipSection />
+    <StatisticsSection />
   </div>
 </template>
 
@@ -14,6 +15,7 @@
   import CourseSection from './components/Courses'
   import EventSection from './components/Events'
   import MembershipSection from './components/Membership'
+  import StatisticsSection from './components/Statistics'
 
   export default {
     name: 'App',
@@ -22,7 +24,8 @@
       PageBanner,
       CourseSection,
       EventSection,
-      MembershipSection
+      MembershipSection,
+      StatisticsSection
     }
   }
 </script>
