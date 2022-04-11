@@ -16,7 +16,7 @@
           <!-- Contact form -->
           <div class="lg:col-span-7">
             <div class="text-3xl font-narrow font-bold pb-8 text-center lg:text-start">Contact Form</div>
-            <div class="lg:grid lg:grid-cols-2 gap-4 space-y-5 lg-space-y-0">
+            <div class="lg:grid lg:grid-cols-2 gap-4 space-y-5 lg:space-y-0">
               <div><AppTextInput placeholder="Full Name" /></div>
               <div><AppTextInput placeholder="Contact Number" /></div>
 

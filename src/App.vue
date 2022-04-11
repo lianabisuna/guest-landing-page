@@ -1,12 +1,14 @@
 <template>
   <div id="app">
     <PageNavigation />
-    <PageBanner />
-    <CourseSection />
-    <EventSection />
-    <MembershipSection />
-    <StatisticsSection />
-    <ContactSection />
+    <main class="relative">
+      <PageBanner />
+      <CourseSection />
+      <EventSection />
+      <MembershipSection />
+      <StatisticsSection />
+      <ContactSection />
+    </main>
     <PageFooter />
     <PageSubFooter />
   </div>

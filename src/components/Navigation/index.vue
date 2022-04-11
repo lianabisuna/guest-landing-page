@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2 lg:grid-cols-3 px-3 lg:px-10 py-4 border-2 border-b-yellow-500">
+  <header class="sticky top-0 z-50 grid grid-cols-2 lg:grid-cols-3 px-3 lg:px-10 py-4 border-2 border-b-yellow-500">
     <!-- WEB -->
     <!-- Logo/Button -->
     <div class="lg:flex space-x-4 hidden lg:visible">
@@ -37,7 +37,7 @@
     <div class="ml-auto visible lg:hidden">
       <AppButton outlined value="Login" />
     </div>
-  </div>
+  </header>
 </template>
 
 <script>

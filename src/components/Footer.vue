@@ -53,9 +53,9 @@ export default {
     name: 'PageFooter',
     data: () => ({
       socialLinks: [
-        { icon: 'fa-brand fa-facebook', color: 'bg-indigo-700' },
-        { icon: 'fa-brand fa-google-plus', color: 'bg-red-600' },
-        { icon: 'fa-brand fa-twitter', color: 'bg-blue-300' }
+        { icon: 'fa-brands fa-facebook-f', color: 'bg-indigo-700' },
+        { icon: 'fa-brands fa-google-plus-g', color: 'bg-red-500' },
+        { icon: 'fa-brands fa-twitter', color: 'bg-blue-400' }
       ]
     })
 }
