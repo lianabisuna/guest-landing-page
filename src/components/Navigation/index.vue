@@ -13,11 +13,10 @@
     <div class="lg:flex items-center justify-center hidden lg:visible">
       <ul class="flex space-x-4">
         <li
-          v-for="(item, index) in menuItems"
+          v-for="(menu, index) in menuItems"
           :key="index"
-          :class="{ 'text-blue-500 font-bold italic': item.active }"
         >
-          <button>{{ item.name }}</button>
+          <button :class="{ 'text-blue-500 font-bold': currentMenu == menu }">{{ menu }}</button>
         </li>
       </ul>
     </div>
@@ -48,13 +47,8 @@
     name: 'PageNavigation',
 
     data: () => ({
-      menuItems: [
-        { name: 'Home', value: '', active: true },
-        { name: 'Courses', value: '', active: false },
-        { name: 'Events', value: '', active: false },
-        { name: 'Membership', value: '', active: false },
-        { name: 'Contact Us', value: '', active: false },
-      ]
+      menuItems: ['Home', 'Courses', 'Events', 'Membership', 'Contact Us'],
+      currentMenu: 'Home'
     })
   }
 </script>
