@@ -1,8 +1,8 @@
 <template>
-  <div class="rounded p-5 flex space-x-3 shadow-lg bg-white">
+  <div class="rounded p-5 lg:flex space-x-3 shadow-lg bg-white">
       <!-- Left Image -->
-      <div>
-          <img :src="image" alt="events" class="object-none w-full h-full">
+      <div class="pb-5 lg:pb-0">
+          <img :src="require(`@/assets/images/events/${image}.jpg`)" alt="events" class="object-cover h-full w-[30rem]">
       </div>
 
       <!-- Right Column -->

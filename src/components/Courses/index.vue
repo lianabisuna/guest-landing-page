@@ -1,15 +1,13 @@
 <template>
-  <div class="px-3 lg:px-10 py-16 space-y-10">
+  <div class="px-3 lg:px-10 py-16 space-y-10 mt-20 lg:mt-0">
     <!-- Section Title -->
-    <div class="grid grid-cols-3">
-      <div></div>
-      <div><div class="text-3xl font-narrow text-center font-bold">Popular Courses</div></div>
-      <div class="ml-auto"><AppButton outlined value="All courses" /></div>
+    <div class="text-center">
+      <div class="text-3xl font-narrow font-bold pb-1">Popular Courses</div>
     </div>
 
     <!-- Filter Tabs -->
     <div>
-      <ul class="flex justify-center">
+      <ul class="lg:flex justify-center hidden">
         <li v-for="(tab, index) in tabItems" :key="index">
           <button
             :class="[
@@ -21,10 +19,13 @@
           </button>
         </li>
       </ul>
+      <div class="block lg:hidden flex justify-center">
+        <AppDropdown value="All courses" />
+      </div>
     </div>
 
     <!-- Course Cards -->
-    <div class="space-x-5 flex overflow-y-auto">
+    <div class="w-screen flex space-x-5">
       <CourseCard
         v-for="(course, index) in courseItems"
         :key="index"
@@ -52,11 +53,11 @@
     },
     data: () => ({
       courseItems: [
-          { title: 'Lastest Updates in Small Animal Cardiology Practice', price: 'Php 750.00', stars: 2458, src: '@/assets/images/courses/popular-courses-2.jpg' },
-          { title: 'Lastest Updates in Small Animal Cardiology Practice', price: 'Php 750.00', stars: 2458, src: '@/assets/images/courses/popular-courses.jpg' },
-          { title: 'Lastest Updates in Small Animal Cardiology Practice', price: 'Php 750.00', stars: 2458, src: '@/assets/images/courses/popular-courses-1.jpg' },
-          { title: 'Lastest Updates in Small Animal Cardiology Practice', price: 'Php 750.00', stars: 2458, src: '@/assets/images/courses/popular-courses-2.jpg' },
-          { title: 'Lastest Updates in Small Animal Cardiology Practice', price: 'Php 750.00', stars: 2458, src: '@/assets/images/courses/popular-courses.jpg' },
+          { title: 'Lastest Updates in Small Animal Cardiology Practice', price: 'Php 750.00', stars: 2458, src: 'popular-courses-2' },
+          { title: 'Lastest Updates in Small Animal Cardiology Practice', price: 'Php 750.00', stars: 2458, src: 'popular-courses' },
+          { title: 'Lastest Updates in Small Animal Cardiology Practice', price: 'Php 750.00', stars: 2458, src: 'popular-courses-1' },
+          { title: 'Lastest Updates in Small Animal Cardiology Practice', price: 'Php 750.00', stars: 2458, src: 'popular-courses-2' },
+          { title: 'Lastest Updates in Small Animal Cardiology Practice', price: 'Php 750.00', stars: 2458, src: 'popular-courses' },
       ],
       currentTab: 'Agriculture',
       tabItems: ['Agriculture', 'Architecture', 'Criminology', 'Medicine', 'Midwifery', 'Nursing', 'Veterinary Medicine'],

@@ -1,6 +1,6 @@
 <template>
-  <div class="shadow-lg p-2 w-64 space-y-1">
-      <img :src="image" alt="popular-courses" class="rounded">
+  <div class="shadow-lg p-2 w-5/6 lg:w-[20%] flex-none space-y-1">
+      <img :src="require(`@/assets/images/courses/${image}.jpg`)" alt="popular-courses" class="rounded w-full">
       <div class="text-lg font-semibold">{{ title }}</div>
       <div class="flex">
           <span class="text-gray-500">{{ price }}</span>

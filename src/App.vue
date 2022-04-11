@@ -46,5 +46,6 @@
     -moz-osx-font-smoothing: grayscale;
     color: #4F4F4F;
     font-size: 16px;
+    overflow-x: hidden;
   }
 </style>

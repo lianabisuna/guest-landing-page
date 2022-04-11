@@ -7,8 +7,8 @@
             <div class="text-xl">Join Upcoming CPD Accredited Training, Events and Seminars</div>
         </div>
 
-        <!-- Event cards -->
-        <div class="grid grid-cols-2 gap-5">
+        <!-- Event cards -->    
+        <div class="lg:grid lg:grid-cols-2 gap-5 space-y-5 lg:space-y-0">
             <EventCard
                 v-for="(event, index) in eventItems"
                 :key="index"
@@ -16,6 +16,7 @@
                 :date="event.date"
                 :preview="event.preview"
                 :image="event.src"
+                :class="{ 'hidden': index == eventItems.length-1 }"
             />
         </div>
 
@@ -36,10 +37,10 @@
         },
         data: () => ({
             eventItems: [
-                { title: 'Lorem Ipsum Set Dolor', date: 'Jan 27, 2022', preview: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil iure reprehenderit qui in ea voluptate velit esse quam nihil...', src: '@/assets/images/events/events-2.jpg' },
-                { title: 'Lorem Ipsum Set Dolor', date: 'Jan 27, 2022', preview: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil iure reprehenderit qui in ea voluptate velit esse quam nihil...', src: '@/assets/images/events/events-1.jpg' },
-                { title: 'Lorem Ipsum Set Dolor', date: 'Jan 27, 2022', preview: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil iure reprehenderit qui in ea voluptate velit esse quam nihil...', src: '@/assets/images/events/events-3.jpg' },
-                { title: 'Lorem Ipsum Set Dolor', date: 'Jan 27, 2022', preview: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil iure reprehenderit qui in ea voluptate velit esse quam nihil...', src: '@/assets/images/events/event-4.jpg' },
+                { title: 'Lorem Ipsum Set Dolor', date: 'Jan 27, 2022', preview: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil iure reprehenderit qui in ea voluptate velit esse quam nihil...', src: 'events-2' },
+                { title: 'Lorem Ipsum Set Dolor', date: 'Jan 27, 2022', preview: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil iure reprehenderit qui in ea voluptate velit esse quam nihil...', src: 'events-1' },
+                { title: 'Lorem Ipsum Set Dolor', date: 'Jan 27, 2022', preview: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil iure reprehenderit qui in ea voluptate velit esse quam nihil...', src: 'events-3' },
+                { title: 'Lorem Ipsum Set Dolor', date: 'Jan 27, 2022', preview: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil iure reprehenderit qui in ea voluptate velit esse quam nihil...', src: 'event-4' },
             ]
         })
     }
