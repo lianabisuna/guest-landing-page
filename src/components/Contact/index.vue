@@ -2,7 +2,7 @@
   <div class="px-40 py-16 space-y-10">
       <div class="grid grid-cols-12">
           <!-- Get in touch -->
-          <div class="col-span-5 space-y-6">
+          <div class="col-span-5 space-y-6 pr-28">
             <div class="text-3xl font-narrow font-bold pb-2">Get In Touch</div>
             <AppContact
               v-for="(contact, index) in contactItems"
@@ -15,7 +15,16 @@
 
           <!-- Contact form -->
           <div class="col-span-7">
-            <div class="text-3xl font-narrow font-bold">Contact Form</div>
+            <div class="text-3xl font-narrow font-bold pb-8">Contact Form</div>
+            <div class="grid grid-cols-2 gap-5">
+              <div><AppTextInput placeholder="Full Name" /></div>
+              <div><AppTextInput placeholder="Contact Number" /></div>
+
+              <div class="col-start-1 col-end-3"><AppTextarea placeholder="Your Message" /></div>
+
+              <div><AppTextInput placeholder="Email Address" /></div>
+              <div><AppButton class="w-full" value="Send Message" /></div>
+            </div>
           </div>
       </div>
   </div>
