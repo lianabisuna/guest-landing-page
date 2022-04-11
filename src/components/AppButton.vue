@@ -18,7 +18,7 @@
 
     props: {
       value: { type: String, default: '' },
-      white: { type: String, default: '' },
+      white: { type: Boolean, default: false },
       outlined: { type: Boolean, default: false },
       large: { type: Boolean, default: false },
     }

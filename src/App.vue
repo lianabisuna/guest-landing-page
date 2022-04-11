@@ -3,6 +3,7 @@
     <PageNavigation />
     <PageBanner />
     <CourseSection />
+    <EventSection />
   </div>
 </template>
 
@@ -10,13 +11,15 @@
   import PageNavigation from './components/Navigation'
   import PageBanner from './components/Banner'
   import CourseSection from './components/Courses'
+  import EventSection from './components/Events'
 
   export default {
     name: 'App',
     components: {
       PageNavigation,
       PageBanner,
-      CourseSection
+      CourseSection,
+      EventSection
     }
   }
 </script>
