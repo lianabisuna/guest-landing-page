@@ -4,7 +4,7 @@
     <input
       type="text"
       :placeholder="placeholder"
-      class="w-full py-2 rounded border border-gray-300 px-2.5 text-sm"
+      class="w-full min-h-[2.5rem] rounded border border-gray-300 px-2.5"
     >
   </div>
 </template>

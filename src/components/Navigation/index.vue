@@ -3,9 +3,7 @@
     <!-- WEB -->
     <!-- Logo/Button -->
     <div class="lg:flex space-x-4 hidden lg:visible">
-      <div>
-        <img src="@/assets/images/logo.png" alt="logo" class="h-full">
-      </div>
+      <AppLogo />
       <AppButton outlined value="Find Courses" />
     </div>
 

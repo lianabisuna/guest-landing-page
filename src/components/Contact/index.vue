@@ -16,7 +16,7 @@
           <!-- Contact form -->
           <div class="col-span-7">
             <div class="text-3xl font-narrow font-bold pb-8">Contact Form</div>
-            <div class="grid grid-cols-2 gap-5">
+            <div class="grid grid-cols-2 gap-4">
               <div><AppTextInput placeholder="Full Name" /></div>
               <div><AppTextInput placeholder="Contact Number" /></div>
 
